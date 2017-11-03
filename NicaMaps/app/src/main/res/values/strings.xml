@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">El Denunciante</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hi">This is the complaint fragment</string>
+    <string name="myhi">This is the "My complaints" Fragment</string>
+
+    <!-- Complaint add activity -->
+    <string name="complaint_add_activity_edit_text_title">Titulo</string>
+    <string name="complaint_add_activity_edit_text_description">Descripción</string>
+    <string name="complaint_add_activity_button_create">Crear</string>
+
+    <string name="test_name_one">Tubería rota</string>
+    <string name="test_name_two">Animal en el agua</string>
+    <string name="test_name_three">Basura en las alcantarillas</string>
+    <string name="activity_main_email_title">Email</string>
+    <string name="activity_main_password_title">Contraseña</string>
+    <string name="activity_main_sign_in">Entrar</string>
+    <string name="activity_main_sign_up">Registrarme</string>
+    <string name="activity_main_name_title">Nombre</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true"
+    tools:context="com.uca.apps.isi.nct.activities.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/image_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_main_image_padding"
+                android:paddingTop="@dimen/activity_main_image_padding">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/water_icon" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_texts_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_main_input_padding"
+                android:paddingRight="@dimen/activity_main_input_padding"
+                android:layout_below="@+id/image_container">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/activity_main_email_title"
+                        app:backgroundTint="@color/colorInputAndText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/activity_main_password_title"
+                        app:backgroundTint="@color/colorInputAndText"
+                        android:layout_marginBottom="@dimen/activity_main_margin_bottom"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:minWidth="5dp"
+                    android:id="@+id/sign_in"
+                    android:text="@string/activity_main_sign_up"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:backgroundTint="@color/colorButton"
+                    android:layout_marginRight="@dimen/activity_main_margin"
+                    android:layout_marginLeft="@dimen/activity_main_margin"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/sign_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:minWidth="5dp"
+                    android:text="@string/activity_main_sign_in"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:backgroundTint="@color/colorButton"
+                    android:layout_marginRight="@dimen/activity_main_margin"
+                    android:layout_marginLeft="@dimen/activity_main_margin"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -13,7 +13,7 @@ import com.uca.apps.isi.nct.models.Complaint;
 import com.uca.apps.isi.nct.models.User;
 
 public interface ApiInterface {
-    
+
     @GET("Categories")
     Call<List<Category>> getCategories();
 
